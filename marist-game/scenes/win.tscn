@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://do2b3xdvt7bg"]
+
+[node name="Win" type="CanvasLayer" unique_id=105159944]
+
+[node name="Label" type="Label" parent="." unique_id=147918558]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 25
+text = "You Win!"
+horizontal_alignment = 1
+vertical_alignment = 1

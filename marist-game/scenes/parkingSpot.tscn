@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://crns14bmm66mp"]
+
+[ext_resource type="PackedScene" uid="uid://cbg6lepp0yt48" path="res://scenes/TileMapLayer.tscn" id="1_c2qxy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_st3l2"]
+size = Vector2(50, 58)
+
+[node name="ParkingSpot" type="Area2D" unique_id=808562841]
+collision_layer = 2
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=674428128]
+position = Vector2(8, 8)
+shape = SubResource("RectangleShape2D_st3l2")
+
+[node name="TileMapLayer" parent="." unique_id=238468024 instance=ExtResource("1_c2qxy")]
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 13, 0, 24, 0, 0, 0)

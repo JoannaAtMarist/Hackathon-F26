@@ -1,11 +1,21 @@
 [gd_scene format=3 uid="uid://yicge48108e0"]
 
+[ext_resource type="Script" uid="uid://b0ty32plikcic" path="res://scripts/game.gd" id="1_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://coar0w52ewb50" path="res://scenes/world.tscn" id="1_uwrxv"]
 [ext_resource type="PackedScene" uid="uid://byque4w54oowj" path="res://player/player.tscn" id="2_yqjtg"]
+[ext_resource type="PackedScene" uid="uid://crns14bmm66mp" path="res://scenes/parkingSpot.tscn" id="4_lbhrr"]
 
 [node name="Game" type="Node" unique_id=1257623219]
+script = ExtResource("1_lnu2h")
 
 [node name="World" parent="." unique_id=1202864457 instance=ExtResource("1_uwrxv")]
 
 [node name="Player" parent="." unique_id=1614826799 instance=ExtResource("2_yqjtg")]
 position = Vector2(259, 622)
+
+[node name="Spots" type="Node" parent="." unique_id=480372416]
+
+[node name="ParkingSpot" parent="Spots" unique_id=808562841 instance=ExtResource("4_lbhrr")]
+position = Vector2(16, 39)
+
+[connection signal="body_entered" from="Spots/ParkingSpot" to="." method="_on_parking_spot_body_entered"]
