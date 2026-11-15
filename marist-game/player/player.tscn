@@ -10,6 +10,7 @@ size = Vector2(42, 15)
 size = Vector2(29, 7)
 
 [node name="Player" type="CharacterBody2D" unique_id=1614826799]
+scale = Vector2(1.5, 1.5)
 script = ExtResource("1_rkbax")
 
 [node name="Area2DDetector" type="Area2D" parent="." unique_id=548510175]
