@@ -16,6 +16,6 @@ position = Vector2(259, 622)
 [node name="Spots" type="Node" parent="." unique_id=480372416]
 
 [node name="ParkingSpot" parent="Spots" unique_id=808562841 instance=ExtResource("4_lbhrr")]
-position = Vector2(16, 39)
+position = Vector2(-184, -65)
 
 [connection signal="body_entered" from="Spots/ParkingSpot" to="." method="_on_parking_spot_body_entered"]

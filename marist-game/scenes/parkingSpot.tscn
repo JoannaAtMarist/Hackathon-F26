@@ -3,15 +3,17 @@
 [ext_resource type="PackedScene" uid="uid://cbg6lepp0yt48" path="res://scenes/TileMapLayer.tscn" id="1_c2qxy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_st3l2"]
-size = Vector2(50, 58)
+size = Vector2(20, 18.5)
 
 [node name="ParkingSpot" type="Area2D" unique_id=808562841]
 collision_layer = 2
 collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=674428128]
-position = Vector2(8, 8)
+position = Vector2(2, -1.25)
 shape = SubResource("RectangleShape2D_st3l2")
+debug_color = Color(0.8031518, 0.09501111, 0.9736424, 0.41960785)
 
 [node name="TileMapLayer" parent="." unique_id=238468024 instance=ExtResource("1_c2qxy")]
+visible = false
 tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 13, 0, 24, 0, 0, 0)
