@@ -2,6 +2,18 @@
 
 [ext_resource type="Texture2D" uid="uid://c04ornlq061qh" path="res://assets/kenney_roguelike-modern-city/Tilemap/tilemap.png" id="1_20s6h"]
 
+[sub_resource type="TileMapPattern" id="TileMapPattern_20s6h"]
+tile_data = PackedInt32Array(0, 720896, 19, 65536, 720896, 19, 131072, 720896, 19, 1, 589824, 21, 65537, 589824, 21, 131073, 589824, 21, 2, 655360, 21, 65538, 655360, 21, 131074, 655360, 21, 3, 720896, 19, 65539, 720896, 19, 131075, 720896, 19)
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_dscp0"]
+tile_data = PackedInt32Array(0, 720896, 19, 65536, 655360, 19, 131072, 655360, 20, 196608, 720896, 19, 1, 720896, 19, 65537, 655360, 19, 131073, 655360, 20, 196609, 720896, 19, 2, 720896, 19, 65538, 655360, 19, 131074, 655360, 20, 196610, 720896, 19, 3, 720896, 19, 65539, 655360, 19, 131075, 655360, 20, 196611, 720896, 19)
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_2gvvl"]
+tile_data = PackedInt32Array(0, 720896, 19, 65536, 1114112, 22, 1, 851968, 24, 65537, 1114112, 22, 2, 720896, 19, 65538, 1114112, 22)
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_ufxw7"]
+tile_data = PackedInt32Array(0, 720896, 19, 65536, 851968, 24, 131072, 720896, 19, 1, 1114112, 21, 65537, 1114112, 21, 131073, 1114112, 21)
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dscp0"]
 texture = ExtResource("1_20s6h")
 separation = Vector2i(1, 1)
@@ -1150,6 +1162,10 @@ separation = Vector2i(1, 1)
 [sub_resource type="TileSet" id="TileSet_2gvvl"]
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_dscp0")
+pattern_0 = SubResource("TileMapPattern_20s6h")
+pattern_1 = SubResource("TileMapPattern_dscp0")
+pattern_2 = SubResource("TileMapPattern_2gvvl")
+pattern_3 = SubResource("TileMapPattern_ufxw7")
 
 [node name="TileMapLayer" type="TileMapLayer" unique_id=238468024]
 tile_set = SubResource("TileSet_2gvvl")
