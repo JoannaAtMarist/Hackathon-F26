@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://byque4w54oowj"]
+
+[ext_resource type="Texture2D" uid="uid://dcuoa385q5b5x" path="res://assets/kenney_pixel-vehicle-pack/PNG/Cars/sedan_blue.png" id="1_oul6g"]
+[ext_resource type="Script" uid="uid://batafhm05bnuw" path="res://player/player.gd" id="1_rkbax"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oul6g"]
+size = Vector2(42, 15)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rkbax"]
+size = Vector2(29, 7)
+
+[node name="Player" type="CharacterBody2D" unique_id=1614826799]
+script = ExtResource("1_rkbax")
+
+[node name="Area2DDetector" type="Area2D" parent="." unique_id=548510175]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2DDetector" unique_id=258603753]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_oul6g")
+debug_color = Color(0.87958175, 0.3288403, 0.23031408, 0.41960785)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=231011967]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=643011426]
+texture = ExtResource("1_oul6g")
+
+[node name="CollisionShape2DCollider" type="CollisionShape2D" parent="." unique_id=1992222291]
+position = Vector2(0.5, 2.5)
+shape = SubResource("RectangleShape2D_rkbax")
