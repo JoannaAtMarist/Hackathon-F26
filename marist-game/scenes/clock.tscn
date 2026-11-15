@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bpfpj37gduawr"]
+
+[node name="Clock" type="CanvasLayer" unique_id=1022835259]
+
+[node name="ClockLabel" type="Label" parent="." unique_id=743413929]
+offset_right = 40.0
+offset_bottom = 23.0
